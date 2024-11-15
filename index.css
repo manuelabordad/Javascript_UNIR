@@ -1,0 +1,10 @@
+.container {
+	display: block;
+	text-align: center;
+	margin-bottom: 10rem;
+}
+
+.ejercicio {
+	margin: 5px;
+	text-align: center;
+}

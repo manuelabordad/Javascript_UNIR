@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Javascript Ajax</title>
+		<link rel="stylesheet" href="index.css" />
+	</head>
+	<body>
+		<div class="container">
+			<h1>Ejercicios de Javascript</h1>
+			<div class="ejercicio">
+				<h2>1.Detectar palíndromo</h2>
+				<input type="text" id="palindromo" placeholder="Escriba una palabra" />
+				<button onclick="detectarPalindromo()">Detectar</button>
+				<p id="resultadoPalindromo"></p>
+			</div>
+			<div class="ejercicio">
+				<h2>2.¿Cual es el mayor?</h2>
+				<input type="text" placeholder="Numero 1" id="num1" />
+				<input type="text" placeholder="Numero 2" id="num2" />
+				<button onclick="encontrarMayor()">Calcular</button>
+				<p id="resultadoNumeroMayor"></p>
+			</div>
+			<div class="ejercicio">
+				<h2>3.Vocales encontradas</h2>
+				<input type="text" id="fraseVocales" placeholder="Ingresa una frase" />
+				<button onclick="encontrarVocales()">Vocales</button>
+				<p id="resultadoVocales"></p>
+			</div>
+			<div class="ejercicio">
+				<h2>4.Cantidad de vocales en frase</h2>
+				<input
+					type="text"
+					id="contarVocalesFrase"
+					placeholder="Ingresa una frase"
+				/>
+				<button onclick="contarVocales()">Contar Vocales</button>
+				<p id="resultadoContarVocales"></p>
+			</div>
+		</div>
+		<div class="container">
+			<h1>Ejericios de Ajax(Fetch API)</h1>
+
+			<label for="url">URL:</label>
+			<input type="text" id="url" size="50" />
+			<button id="mostarContenidos">Mostrar Contenidos</button>
+
+			<h2>Zona de Contenidos</h2>
+			<div id="contenido">Aquí se mostrará el contenido de la URL.</div>
+
+			<h2>Zona Estados de la petición</h2>
+			<div id="estado">No iniciada</div>
+
+			<h2>Zona Cabeceras HTTP de la respuesta</h2>
+			<div id="headers">Aquí se mostrarán las cabeceras de la respuesta.</div>
+
+			<h2>Zona Código de Estado</h2>
+			<div id="codigoEstado">
+				Aquí se mostrará el código y el texto de la respuesta.
+			</div>
+		</div>
+		<script src="index.js"></script>
+	</body>
+</html>
